@@ -7,3 +7,4 @@ https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/
 # Play Midnight
 https://github.com/chrisxclash/play-midnight/
 
+![GPMDP Example](http://puu.sh/r6uiO/eabe2992c5.jpg)
