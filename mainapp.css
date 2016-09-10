@@ -1,0 +1,13 @@
+.title-bar {
+    background-color: <<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>> !important;
+}
+
+.window-border {
+    border-left-color: <<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>> !important;
+    border-right-color: <<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>> !important;
+    border-bottom-color: <<FORE_SECONDARY>> !important;
+}
+
+.dialog .window-title {
+	background-color:  <<FORE_SECONDARY>> !important;
+}
