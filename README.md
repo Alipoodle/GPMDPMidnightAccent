@@ -5,5 +5,5 @@ This is an CSS for Google Play Music Desktop Player to add into the Custom Style
 https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/
 
 # Play Midnight
-https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/
+https://github.com/chrisxclash/play-midnight/
 
