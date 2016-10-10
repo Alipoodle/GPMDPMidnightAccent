@@ -17,3 +17,6 @@
     background: <<FORE_SECONDARY>>;
     opacity: .3;
 }
+[data-id="yt-indicator"] {
+	display: none;
+}
