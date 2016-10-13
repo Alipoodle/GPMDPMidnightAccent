@@ -20,3 +20,13 @@
 [data-id="yt-indicator"] {
 	display: none;
 }
+paper-header-panel#content-container.transparent #material-app-bar {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+
+.material #content-container sj-search-box, #content-container sj-search-box {
+    background-color: rgba(20,21,23,.5) !important;
+    color: #dcdcdc !important;
+}
