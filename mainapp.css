@@ -3,11 +3,12 @@
 }
 
 .window-border {
-    border-left-color: <<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>> !important;
-    border-right-color: <<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>> !important;
-    border-bottom-color: <<FORE_SECONDARY>> !important;
+    border-color: <<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>> !important;
 }
 
 .dialog .window-title {
 	background-color:  <<FORE_SECONDARY>> !important;
+}
+[mini] .window-border {
+	border-color: <<BACK_PRIMARY>> !important;
 }
