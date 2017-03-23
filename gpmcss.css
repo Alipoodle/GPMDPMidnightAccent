@@ -32,6 +32,10 @@ paper-header-panel#content-container.transparent #material-app-bar {
     background-color: rgba(20,21,23,.5) !important;
     color: #dcdcdc !important;
 }
+.qp #material-one-middle .material-search, .qp #material-one-middle .material-search:focus {
+	background-color: rgba(255,255,255,0.16) !important;
+	color: #fafafa
+}
 .material #content-container sj-search-box[opened] {
     background-color: #27292d !important;
 }
@@ -40,14 +44,15 @@ paper-header-panel#content-container.transparent #material-app-bar {
 paper-dialog input::selection, paper-dialog textarea::selection {
 	background:<<ALPHA 0.6>><<FORE_SECONDARY>><</ALPHA>>;
 }
-
-/* Fixes Play button in the Playlist tab (In Upstream will be removed onces new version made) */
-.material .sj-play-button-0 #buttonContent.sj-play-button {
-    background: <<FORE_SECONDARY>>;
+/*Bigger Album Art (Does hide Suggestions)*/
+#edit-album-art, #suggested-album-art {
+    width: 125px;
+    height: 125px;
+    background-size: 125px 125px;
 }
-
-.material .sj-play-button-0 #pulse.sj-play-button {
-    background: <<ALPHA 0.5>><<FORE_SECONDARY>><</ALPHA>>;
+#edit-album-art-clear, #edit-album-art-change {
+    top: 78px;
+    right: -25px;
 }
 
 
