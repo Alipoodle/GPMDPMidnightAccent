@@ -94,8 +94,7 @@ paper-header-panel#content-container.transparent #material-app-bar {
 }
 
 /* Changes default Album Art */
-[src="https://play-music.gstatic.com/fe/79da3dc5aecf676c3c59dce5125cb57a/default_album.svg"] { filter: invert(100%) !important; }
-
+[src="https://play-music.gstatic.com/fe/4b2b8d68e6e41d1c36bdf7b0dcefbda8/default_album.svg"] { filter: invert(100%) !important; }
 
 /*
   __  __  ___  ____    ____ 
@@ -108,9 +107,9 @@ paper-header-panel#content-container.transparent #material-app-bar {
 /* Creates Pause icon */
 .song-table.tight .song-row .song-indicator[data-playback-status="paused"] {
     background-image: none;
-	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAkAAAAJAB4BxuPAAAAUklEQVRYw+3WMQ4AEAxGYRV3dganrtVANDQ6eN/8S98oJQCfEctIVev0sUjz2J8E6eKAeOxH2RL0EkEEEURQNIIIIoigaATtFONu+zm/3AP4VwezhRE/tK96ygAAAABJRU5ErkJggg==') !important;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAkAAAAJAB4BxuPAAAAUklEQVRYw+3WMQ4AEAxGYRV3dganrtVANDQ6eN/8S98oJQCfEctIVev0sUjz2J8E6eKAeOxH2RL0EkEEEURQNIIIIoigaATtFONu+zm/3AP4VwezhRE/tK96ygAAAABJRU5ErkJggg==') !important;
     background-color: inherit !important;
-	background-size: 32px, 32px !important;
+    background-size: 32px, 32px !important;
 } 	
 
 /* Themes more things with your accent
