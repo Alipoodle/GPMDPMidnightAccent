@@ -1,14 +1,10 @@
-.title-bar {
-    background-color: <<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>> !important;
-}
+/* This themes the borders of the Program (this works on Windows might be slightly different on MAC) */
+.title-bar, .darwin-title-bar,  .window-border { background-color:<<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>>!important;border-color:<<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>>!important;}
 
-.window-border {
-    border-color: <<DARKEN 0.1>><<FORE_SECONDARY>><</DARKEN>> !important;
-}
+/* Mini player, I felt that the mini player looks better with black border! */
+[mini] .window-border {border-color:<<BACK_PRIMARY>>!important;}
 
-.dialog .window-title {
-	background-color:  <<FORE_SECONDARY>> !important;
-}
-[mini] .window-border {
-	border-color: <<BACK_PRIMARY>> !important;
-}
+/* Themes the top bar in the Desktop settings */
+.dialog .window-title {background-color:<<FORE_SECONDARY>>!important;}
+
+
