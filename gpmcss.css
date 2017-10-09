@@ -133,7 +133,3 @@ One example being the Undo button for deleting a song */
 .more-songs-container { border-top: 0px; }
 
 gpm-quick-nav-2 .items.gpm-quick-nav > [selected] { color: <<FORE_SECONDARY>>; } /* Fix Splash effect */
-
-/* Personal Stuff, Fixes the Underlines for the edit section and Volume size*/
-.paper-input-container-0 .unfocused-line.paper-input-container { height: 1.2px; }
-.paper-progress-3 #progressContainer.paper-progress, .paper-progress-3 .indeterminate.paper-progress::after { height: 2.4px; }
