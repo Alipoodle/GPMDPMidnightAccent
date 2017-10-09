@@ -1,5 +1,7 @@
-/* A Font, This is optional
+/* A Font, This is optional 
+   remove the things above the "@import" and below the "}" bracket to use font*/
 
+/*
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 div {
@@ -9,7 +11,10 @@ div {
 
 
 /* Themes the top bar to accent colour */
-.material #material-app-bar, .material #nav-container #music-content.material .material-cover { background-color: <<FORE_SECONDARY>> !important; }
+.material #material-app-bar, .material #nav-container #music-content.material .material-cover {background-color:<<FORE_SECONDARY>>!important;}
+/* This changes the colour of the current tab for the Library section 
+   Default this is your accent colour, this changes it to white to match the text above.*/
+.paper-tabs-1 #selectionBar.paper-tabs {background-color:<<FORE_PRIMARY>>;}
 
 
 /* Remove
@@ -21,20 +26,20 @@ div {
 */
 
 /* Removes the Shop button*/
-#shop-nav, #nav_collections > paper-button { display: none; }
+#shop-nav, #nav_collections > paper-button{display:none;}
 
 /* Removes Youtube button */
-[data-id="yt-indicator"] { display: none; }
+[data-id="yt-indicator"]{display:none;}
 
 /* Removes Thumbs-up stuff */
-.playlist-drawer-item[data-id="auto-playlist-thumbs-up"] { display: none; }
-#player .player-rating-container { display: none !important; }
-.song-table [data-col="rating"]:last-child { display: none; }
-.song-table [data-col="play-count"] { text-align: center; }
+.playlist-drawer-item[data-id="auto-playlist-thumbs-up"]{display:none;}
+#player .player-rating-container{display:none!important;}
+.song-table [data-col="rating"]:last-child{display:none;}
+.song-table [data-col="play-count"]{text-align:center;} /* Fixes play count */
 
 /* Remove Account stuff */
-.gb_Wc.gb_g .gb_lb, .gb_Wc.gb_g .gb_mb, .gb_Wc.gb_g .gb_ha, .gb_g.gb_ha { display:none; }
-#gb#gb a.gb_b { cursor: default; } /* Changes mouse on hover on icon */
+.gb_Wc.gb_g .gb_lb, .gb_Wc.gb_g .gb_mb, .gb_Wc.gb_g .gb_ha, .gb_g.gb_ha {display:none;}
+#gb#gb a.gb_b {cursor:default;} /* Changes mouse on hover on icon */
 
 
 /* Textbox
@@ -49,19 +54,16 @@ div {
 /* Colours the Selecting of Text within the Edit section */
 paper-dialog input::selection, paper-dialog textarea::selection { background:<<ALPHA 0.6>><<FORE_SECONDARY>><</ALPHA>>; }
 
-/* Makes the top bar transparrent when scrolling to the top
-Also Fixes some Textbox issues / changes how it looks */
-paper-header-panel#content-container.transparent #material-app-bar {
-    background-color: transparent !important;
-    color: white !important;
-}
+.paper-toolbar-1 { color: <<FORE_PRIMARY>> } /* Fixes icons on Search Bar */
+
+/* Changes the "Search" text in the Box*/
 .qp #material-one-middle .material-search::-webkit-input-placeholder{ color:<<FORE_PRIMARY>>; }	
 .gmusic-theme sj-search-box #input.sj-search-box::-webkit-input-placeholder{ color:<<FORE_PRIMARY>>; }
 
 /* ALL ACCESS */
 .material #content-container sj-search-box, #content-container sj-search-box {
     background-color: rgba(20,21,23,0.3) !important;
-    color: #dcdcdc !important;
+    color: <<FORE_PRIMARY>> !important;
 }
 .material #content-container sj-search-box[opened] { background-color: #27292d !important; }
 
@@ -93,8 +95,9 @@ paper-header-panel#content-container.transparent #material-app-bar {
     right: -25px;
 }
 
-/* Changes default Album Art */
-[src="https://play-music.gstatic.com/fe/4b2b8d68e6e41d1c36bdf7b0dcefbda8/default_album.svg"] { filter: invert(100%) !important; }
+/* Changes default Album Art to be inverted to look better on Dark theme.*/
+img[src*="default_album.svg"] { filter: invert(100%) !important; }
+
 
 /*
   __  __  ___  ____    ____ 
@@ -107,9 +110,9 @@ paper-header-panel#content-container.transparent #material-app-bar {
 /* Creates Pause icon */
 .song-table.tight .song-row .song-indicator[data-playback-status="paused"] {
     background-image: none;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAkAAAAJAB4BxuPAAAAUklEQVRYw+3WMQ4AEAxGYRV3dganrtVANDQ6eN/8S98oJQCfEctIVev0sUjz2J8E6eKAeOxH2RL0EkEEEURQNIIIIoigaATtFONu+zm/3AP4VwezhRE/tK96ygAAAABJRU5ErkJggg==') !important;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAkAAAAJAB4BxuPAAAAUklEQVRYw+3WMQ4AEAxGYRV3dganrtVANDQ6eN/8S98oJQCfEctIVev0sUjz2J8E6eKAeOxH2RL0EkEEEURQNIIIIoigaATtFONu+zm/3AP4VwezhRE/tK96ygAAAABJRU5ErkJggg==') !important;
     background-color: inherit !important;
-    background-size: 32px, 32px !important;
+	background-size: 32px, 32px !important;
 } 	
 
 /* Themes more things with your accent
@@ -118,14 +121,19 @@ One example being the Undo button for deleting a song */
 	color: <<FORE_SECONDARY>>;
 }
 
-
-/* Disables the Mouse from changing to click when you */
+/* Fixes the Google Play Music Logo from showing in the top left corner sometimes, and removes the mouse change. */
 .gmusic-theme body.qp #material-app-bar #material-one-left .music-logo {
 	cursor: default;
 	display: none;
 }
 
 /* Free "Radio" GPM Fixes */
-.paper-progress-1 #progressContainer.paper-progress, .paper-progress-1 .indeterminate.paper-progress::after { background: #444;} /* Better colour */
+.paper-progress-1 #progressContainer.paper-progress, .paper-progress-1 .indeterminate.paper-progress::after { background: #444;} /* Better colour for the no skip */
 .top-tracks { background-color: <<BACK_PRIMARY>>; }
 .more-songs-container { border-top: 0px; }
+
+gpm-quick-nav-2 .items.gpm-quick-nav > [selected] { color: <<FORE_SECONDARY>>; } /* Fix Splash effect */
+
+/* Personal Stuff, Fixes the Underlines for the edit section and Volume size*/
+.paper-input-container-0 .unfocused-line.paper-input-container { height: 1.2px; }
+.paper-progress-3 #progressContainer.paper-progress, .paper-progress-3 .indeterminate.paper-progress::after { height: 2.4px; }
