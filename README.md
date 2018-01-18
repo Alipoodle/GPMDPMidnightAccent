@@ -34,7 +34,12 @@ https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/
 https://github.com/chrisxclash/play-midnight/
 
 ### General Example
-![GPMDP Example](https://puu.sh/xTUFJ/b40eaff2b0.png)
+#### Free Google Play
+![GPMDP Free Example](https://puu.sh/xTUFJ/b40eaff2b0.png)
+
+#### Premium Google Play
+![GPMDP Premium Example](https://puu.sh/z4dBo/5f5857fef7.png)
+
 ![Desktop Settings Example](https://puu.sh/xTURE/23b3fb4078.png)
 
 ### Album Edit
