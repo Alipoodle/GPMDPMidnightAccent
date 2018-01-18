@@ -14,7 +14,10 @@ div {
 .material #material-app-bar, .material #nav-container #music-content.material .material-cover {background-color:<<FORE_SECONDARY>>!important;}
 /* This changes the colour of the current tab for the Library section 
    Default this is your accent colour, this changes it to white to match the text above.*/
-.paper-tabs-1 #selectionBar.paper-tabs {background-color:<<FORE_PRIMARY>>;}
+.paper-tabs-1 #selectionBar.paper-tabs {
+	background-color:<<FORE_PRIMARY>>;
+	border-bottom: 2px solid <<FORE_PRIMARY>>;
+}
 
 
 /* Remove
@@ -39,6 +42,7 @@ div {
 
 /* Remove Account stuff */
 .gb_Wc.gb_g .gb_lb, .gb_Wc.gb_g .gb_mb, .gb_Wc.gb_g .gb_ha, .gb_g.gb_ha {display:none;}
+.gb_5c.gb_g .gb_pb, .gb_5c.gb_g .gb_qb, .gb_5c.gb_g .gb_fa, .gb_g.gb_fa {display: none;}
 #gb#gb a.gb_b {cursor:default;} /* Changes mouse on hover on icon */
 
 
@@ -48,7 +52,6 @@ div {
    | | / _ \\ \/ /| __| | '_ \  / _ \ \ \/ /
    | ||  __/ >  < | |_  | |_) || (_) | >  < 
    |_| \___|/_/\_\ \__| |____/  \___/ /_/\_\
-                                                   
 */
 
 /* Colours the Selecting of Text within the Edit section */
@@ -72,6 +75,8 @@ paper-dialog input::selection, paper-dialog textarea::selection { background:<<A
 	background-color: rgba(255,255,255,0.16) !important;
 	color: <<FORE_PRIMARY>>;
 }
+.sj-play-button-11 {background-color: transparent;} /* Fixed Border around Play button */
+.gmusic-theme sj-entity-suggestion #buttonContent { background-color: <<FORE_SECONDARY>>;} /* Make it accent colour instead of black.
 
 /* Album Art
      _     _  _                             _           _
@@ -95,8 +100,9 @@ paper-dialog input::selection, paper-dialog textarea::selection { background:<<A
     right: -25px;
 }
 
-/* Changes default Album Art to be inverted to look better on Dark theme.*/
+/* Changes default Album Art to be inverted to look better on Dark theme. (THIS MIGHT NOT WORK AS THE NAME MIGHT CHANGE) */
 img[src*="default_album.svg"] { filter: invert(100%) !important; }
+img[src*="illo_default_artistradio_portrait.png"] { filter: invert(100%) !important}
 
 
 /*
@@ -113,7 +119,10 @@ img[src*="default_album.svg"] { filter: invert(100%) !important; }
 	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAkAAAAJAB4BxuPAAAAUklEQVRYw+3WMQ4AEAxGYRV3dganrtVANDQ6eN/8S98oJQCfEctIVev0sUjz2J8E6eKAeOxH2RL0EkEEEURQNIIIIoigaATtFONu+zm/3AP4VwezhRE/tK96ygAAAABJRU5ErkJggg==') !important;
     background-color: inherit !important;
 	background-size: 32px, 32px !important;
-} 	
+}
+.song-row .song-indicator[data-playback-status="loading"] {
+	background-image: url(ani_loading_white.gif) !important;
+}
 
 /* Themes more things with your accent
 One example being the Undo button for deleting a song */
@@ -133,3 +142,15 @@ One example being the Undo button for deleting a song */
 .more-songs-container { border-top: 0px; }
 
 gpm-quick-nav-2 .items.gpm-quick-nav > [selected] { color: <<FORE_SECONDARY>>; } /* Fix Splash effect */
+.goog-menu:not([style-scope]):not(.style-scope) .goog-menuitem.selected:not([style-scope]):not(.style-scope) .goog-menuitem-content:not([style-scope]):not(.style-scope) { color: <<FORE_SECONDARY>> !important;} /* Library Select */
+sj-home[selected="0"] .home-palette-id-3, sj-home[selected="1"] .home-palette-id-3 { color: <<FORE_SECONDARY>> !important } /* First thing for Radio Home */
+.gpm-quick-nav-2 .more.gpm-quick-nav { color: <<FORE_PRIMARY>> 
+
+
+
+
+/* Update */
+.goog-menuheader .spinner {
+    background: <<BACK_PRIMARY>> url(ani_loading_white.gif) no-repeat center center;
+    background-size: 30px 30px;
+}
