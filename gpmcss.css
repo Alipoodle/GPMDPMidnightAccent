@@ -141,13 +141,11 @@ One example being the Undo button for deleting a song */
 gpm-quick-nav-2 .items.gpm-quick-nav > [selected] { color: <<FORE_SECONDARY>>; } /* Fix Splash effect */
 .goog-menu:not([style-scope]):not(.style-scope) .goog-menuitem.selected:not([style-scope]):not(.style-scope) .goog-menuitem-content:not([style-scope]):not(.style-scope) { color: <<FORE_SECONDARY>> !important;} /* Library Select */
 sj-home[selected="0"] .home-palette-id-3, sj-home[selected="1"] .home-palette-id-3 { color: <<FORE_SECONDARY>> !important } /* First thing for Radio Home */
-.gpm-quick-nav-2 .more.gpm-quick-nav { color: <<FORE_PRIMARY>> 
-
+.gpm-quick-nav-2 .more.gpm-quick-nav { color: <<FORE_PRIMARY>> };
 
 
 
 /* Update */
 .goog-menuheader .spinner {
-    background: <<BACK_PRIMARY>> url(ani_loading_white.gif) no-repeat center center;
-    background-size: 30px 30px;
+    background: url(ani_loading_white.gif) no-repeat 0/30px !important;
 }
