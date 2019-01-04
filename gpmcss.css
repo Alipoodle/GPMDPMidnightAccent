@@ -14,10 +14,7 @@ div {
 .material #material-app-bar, .material #nav-container #music-content.material .material-cover {background-color:<<FORE_SECONDARY>>!important;}
 /* This changes the colour of the current tab for the Library section 
    Default this is your accent colour, this changes it to white to match the text above.*/
-.paper-tabs-1 #selectionBar.paper-tabs {
-	background-color:<<FORE_PRIMARY>>;
-	border-bottom: 2px solid <<FORE_PRIMARY>>;
-}
+.paper-tabs-1 #selectionBar.paper-tabs { border-color: white; }
 
 
 /* Remove
