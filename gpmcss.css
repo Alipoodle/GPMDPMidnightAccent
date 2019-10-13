@@ -1,151 +1,242 @@
-/* A Font, This is optional 
+/* A Font, This is optional
    remove the things above the "@import" and below the "}" bracket to use font*/
 
 /*
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 div {
-    font-family: 'Karla', sans-serif; !important;
+    font-family: 'Karla', sans-serif !important;
 }
 */
 
-
 /* Themes the top bar to accent colour */
-.material #material-app-bar, .material #nav-container #music-content.material .material-cover {background-color:<<FORE_SECONDARY>>!important;}
-/* This changes the colour of the current tab for the Library section 
+.material #material-app-bar,
+.material #nav-container #music-content.material .material-cover {
+  background-color: <<FORE_SECONDARY>> !important;
+}
+/* This changes the colour of the current tab for the Library section
    Default this is your accent colour, this changes it to white to match the text above.*/
-.paper-tabs-1 #selectionBar.paper-tabs { border-color: white; }
+.paper-tabs-1 #selectionBar.paper-tabs {
+  border-color: white;
+}
+
 
 
 /* Remove
-  ____                                            
- |  _ \   ___  _ __ ___    ___  __   __  ___ 
+  ____
+ |  _ \   ___  _ __ ___    ___  __   __  ___
  | |_) | / _ \| '_ ` _ \  / _ \ \ \ / / / _ \
  |  _ < |  __/| | | | | || (_) | \ V / |  __/
  |_| \_\ \___||_| |_| |_| \___/   \_/   \___|
 */
 
-/* Removes the Shop button*/
-#shop-nav, #nav_collections > paper-button{display:none;}
+/* Removes the Shop button */
+#shop-nav,
+#nav_collections > paper-button {
+  display: none;
+}
 
 /* Removes Youtube button */
-[data-id="yt-indicator"]{display:none;}
+[data-id="yt-indicator"] {
+  display: none;
+}
 
 /* Removes Thumbs-up stuff */
-.playlist-drawer-item[data-id="auto-playlist-thumbs-up"]{display:none;}
-#player .player-rating-container{display:none!important;}
-.song-table [data-col="rating"]:last-child{display:none;}
-.song-table [data-col="play-count"]{text-align:center;} /* Fixes play count */
+.playlist-drawer-item[data-id="auto-playlist-thumbs-up"] {
+  display: none;
+}
+#player .player-rating-container {
+  display: none !important;
+}
+.song-table [data-col="rating"]:last-child {
+  display: none;
+}
+.song-table [data-col="play-count"] {
+  text-align: center;  /* Fixes play count */
+}
 
 /* Remove Account stuff */
-.gb_Wc.gb_g .gb_lb, .gb_Wc.gb_g .gb_mb, .gb_Wc.gb_g .gb_ha, .gb_g.gb_ha {display:none;}
-.gb_5c.gb_g .gb_pb, .gb_5c.gb_g .gb_qb, .gb_5c.gb_g .gb_fa, .gb_g.gb_fa {display: none;}
-#gb#gb a.gb_b {cursor:default;} /* Changes mouse on hover on icon */
+.gb_Wc.gb_g .gb_lb,
+.gb_Wc.gb_g .gb_mb,
+.gb_Wc.gb_g .gb_ha,
+.gb_g.gb_ha {
+  display: none;
+}
+.gb_5c.gb_g .gb_pb,
+.gb_5c.gb_g .gb_qb,
+.gb_5c.gb_g .gb_fa,
+.gb_g.gb_fa {
+  display: none;
+}
+#gb#gb a.gb_b {
+  cursor: default;  /* Changes mouse on hover on icon */
+}
+
 
 
 /* Textbox
-  _____            _     _                   
+  _____            _     _
  |_   _|___ __  __| |_  | |__    ___  __  __
    | | / _ \\ \/ /| __| | '_ \  / _ \ \ \/ /
-   | ||  __/ >  < | |_  | |_) || (_) | >  < 
+   | ||  __/ >  < | |_  | |_) || (_) | >  <
    |_| \___|/_/\_\ \__| |____/  \___/ /_/\_\
 */
 
 /* Colours the Selecting of Text within the Edit section */
-paper-dialog input::selection, paper-dialog textarea::selection { background:<<ALPHA 0.6>><<FORE_SECONDARY>><</ALPHA>>; }
+paper-dialog input::selection,
+paper-dialog textarea::selection {
+  background: <<ALPHA 0.6>><<FORE_SECONDARY>><</ALPHA>>;
+}
 
-.paper-toolbar-1 { color: <<FORE_PRIMARY>> } /* Fixes icons on Search Bar */
+/* Fixes icons on Search Bar */
+.paper-toolbar-1 {
+  color: <<FORE_PRIMARY>>;
+}
 
 /* Changes the "Search" text in the Box*/
-.qp #material-one-middle .material-search::-webkit-input-placeholder{ color:<<FORE_PRIMARY>>; }	
-.gmusic-theme sj-search-box #input.sj-search-box::-webkit-input-placeholder{ color:<<FORE_PRIMARY>>; }
-
-/* ALL ACCESS */
-.material #content-container sj-search-box, #content-container sj-search-box {
-    background-color: rgba(20,21,23,0.3) !important;
-    color: <<FORE_PRIMARY>> !important;
+.qp #material-one-middle .material-search::-webkit-input-placeholder {
+  color: <<FORE_PRIMARY>>;
 }
-.material #content-container sj-search-box[opened] { background-color: #27292d !important; }
+.gmusic-theme sj-search-box #input.sj-search-box::-webkit-input-placeholder {
+  color: <<FORE_PRIMARY>>;
+}
+
+/* Fixes Background for Search Box */
+/* ALL ACCESS */
+.material #content-container sj-search-box,
+#content-container sj-search-box {
+  background-color: rgba(20, 21, 23, 0.3) !important;
+  color: <<FORE_PRIMARY>> !important;
+}
+.material #content-container sj-search-box[opened] {
+  background-color: #27292d !important;
+}
 
 /* FREE */
-.qp #material-one-middle .material-search, .qp #material-one-middle .material-search:focus {
-	background-color: rgba(255,255,255,0.16) !important;
-	color: <<FORE_PRIMARY>>;
+.qp #material-one-middle .material-search,
+.qp #material-one-middle .material-search:focus {
+  background-color: rgba(255, 255, 255, 0.16) !important;
+  color: <<FORE_PRIMARY>>;
 }
-.sj-play-button-11 {background-color: transparent;} /* Fixed Border around Play button */
-.gmusic-theme sj-entity-suggestion #buttonContent { background-color: <<FORE_SECONDARY>>;} /* Make it accent colour instead of black.
+.sj-play-button-11 {
+  background-color: transparent;    /* Fixed Border around Play button */
+}
+.gmusic-theme sj-entity-suggestion #buttonContent {
+  background-color: <<FORE_SECONDARY>>; /* Make it accent colour instead of black. */
+}
+
+
 
 /* Album Art
      _     _  _                             _           _
-    / \   | || |__   _   _  _ __ ___       / \    _ __ | |_ 
+    / \   | || |__   _   _  _ __ ___       / \    _ __ | |_
    / Δ \  | || '_ \ | | | || '_ ` _ \     / Δ \  | '__|| __|
-  / ___ \ | || |_) || |_| || | | | | |   / ___ \ | |   | |_ 
+  / ___ \ | || |_) || |_| || | | | | |   / ___ \ | |   | |_
  /_/   \_\|_||_.__/  \__,_||_| |_| |_|  /_/   \_\|_|    \__|
  */
 
-
-
-/*Bigger Album Art (Does hide Suggestion)*/
-#edit-album-art, #suggested-album-art {
-    width: 125px;
-    height: 125px;
-    background-size: 125px 125px;
+/*Bigger Album Art (Does hide Suggestion image) */
+#edit-album-art,
+#suggested-album-art {
+  width: 125px;
+  height: 125px;
+  background-size: 125px 125px;
 }
 /* Moves the Album Art buttons */
-#edit-album-art-clear, #edit-album-art-change {
-    top: 78px;
-    right: -25px;
+#edit-album-art-clear,
+#edit-album-art-change {
+  top: 78px;
+  right: -25px;
 }
 
 /* Changes default Album Art to be inverted to look better on Dark theme. (THIS MIGHT NOT WORK AS THE NAME MIGHT CHANGE) */
-img[src*="default_album.svg"] { filter: invert(100%) !important; }
-img[src*="illo_default_artistradio_portrait.png"] { filter: invert(100%) !important}
-
+img[src*="default_album.svg"],
+img[src*="illo_default_artistradio_portrait.png"] {
+  filter: invert(100%) !important;
+}
 
 /*
-  __  __  ___  ____    ____ 
+  __  __  ___  ____    ____
  |  \/  ||_ _|/ ___|  / ___|
- | |\/| | | | \___ \ | |    
- | |  | | | |  ___) || |___ 
+ | |\/| | | | \___ \ | |
+ | |  | | | |  ___) || |___
  |_|  |_||___||____/  \____|
 */
 
 /* Creates Pause icon */
 .song-table.tight .song-row .song-indicator[data-playback-status="paused"] {
-    background-image: none;
-	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAkAAAAJAB4BxuPAAAAUklEQVRYw+3WMQ4AEAxGYRV3dganrtVANDQ6eN/8S98oJQCfEctIVev0sUjz2J8E6eKAeOxH2RL0EkEEEURQNIIIIoigaATtFONu+zm/3AP4VwezhRE/tK96ygAAAABJRU5ErkJggg==') !important;
-    background-color: inherit !important;
-	background-size: 32px, 32px !important;
+  background-image: none;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAkAAAAJAB4BxuPAAAAUklEQVRYw+3WMQ4AEAxGYRV3dganrtVANDQ6eN/8S98oJQCfEctIVev0sUjz2J8E6eKAeOxH2RL0EkEEEURQNIIIIoigaATtFONu+zm/3AP4VwezhRE/tK96ygAAAABJRU5ErkJggg==") !important;
+  background-color: inherit !important;
+  background-size: 32px, 32px !important;
 }
 .song-row .song-indicator[data-playback-status="loading"] {
-	background-image: url(ani_loading_white.gif) !important;
+  background-image: url(ani_loading_white.gif) !important;
 }
 
 /* Themes more things with your accent
 One example being the Undo button for deleting a song */
-.top-charts-view .song-row [data-col="index"] .column-content:not([style-scope]):not(.style-scope), .info-card:not([style-scope]):not(.style-scope):not(.szsb-card):not(.add-your-music) paper-button, paper-toast paper-button[data-action="button"]:not([style-scope]):not(.style-scope), .ups.light iron-icon:not([style-scope]):not(.style-scope), .upload-dialog-dragover .upload-dialog-description:not([style-scope]):not(.style-scope), paper-dialog .buttons paper-button:not([style-scope]):not(.style-scope):not([disabled]) {
-	color: <<FORE_SECONDARY>>;
+.top-charts-view .song-row [data-col="index"] .column-content:not([style-scope]):not(.style-scope),
+.info-card:not([style-scope]):not(.style-scope):not(.szsb-card):not(.add-your-music) paper-button,
+paper-toast paper-button[data-action="button"]:not([style-scope]):not(.style-scope),
+.ups.light iron-icon:not([style-scope]):not(.style-scope),
+.upload-dialog-dragover .upload-dialog-description:not([style-scope]):not(.style-scope),
+paper-dialog .buttons paper-button:not([style-scope]):not(.style-scope):not([disabled]) {
+  color: <<FORE_SECONDARY>>;
 }
 
 /* Fixes the Google Play Music Logo from showing in the top left corner sometimes, and removes the mouse change. */
 .gmusic-theme body.qp #material-app-bar #material-one-left .music-logo {
-	cursor: default;
-	display: none;
+  cursor: default;
+  display: none;
 }
 
 /* Free "Radio" GPM Fixes */
-.paper-progress-1 #progressContainer.paper-progress, .paper-progress-1 .indeterminate.paper-progress::after { background: #444;} /* Better colour for the no skip */
-.top-tracks { background-color: <<BACK_PRIMARY>>; }
-.more-songs-container { border-top: 0px; }
+.paper-progress-1 #progressContainer.paper-progress,
+.paper-progress-1 .indeterminate.paper-progress::after {
+  background: #444; /* Better colour for the no skip */
+}
+.top-tracks {
+  background-color: <<BACK_PRIMARY>>;
+}
+.more-songs-container {
+  border-top: 0px;
+}
 
-gpm-quick-nav-2 .items.gpm-quick-nav > [selected] { color: <<FORE_SECONDARY>>; } /* Fix Splash effect */
-.goog-menu:not([style-scope]):not(.style-scope) .goog-menuitem.selected:not([style-scope]):not(.style-scope) .goog-menuitem-content:not([style-scope]):not(.style-scope) { color: <<FORE_SECONDARY>> !important;} /* Library Select */
-sj-home[selected="0"] .home-palette-id-3, sj-home[selected="1"] .home-palette-id-3 { color: <<FORE_SECONDARY>> !important } /* First thing for Radio Home */
-.gpm-quick-nav-2 .more.gpm-quick-nav { color: <<FORE_PRIMARY>>; }
+/* Fix Splash effect */
+gpm-quick-nav-2 .items.gpm-quick-nav > [selected] {
+  color: <<FORE_SECONDARY>>;
+}
 
+/* Library Select */
+.goog-menu:not([style-scope]):not(.style-scope)
+  .goog-menuitem.selected:not([style-scope]):not(.style-scope)
+  .goog-menuitem-content:not([style-scope]):not(.style-scope) {
+  color: <<FORE_SECONDARY>> !important;
+}
 
+/* First thing for Radio Home */
+sj-home[selected="0"] .home-palette-id-3,
+sj-home[selected="1"] .home-palette-id-3,
+.gpm-quick-nav-2 .more.gpm-quick-nav {
+  color: <<FORE_SECONDARY>> !important;
+}
+
+/* Playlist Drag Colour */
+#playlist-drawer:not([style-scope]):not(.style-scope)
+  .playlist-drawer-item.playlist-drop-target:not([style-scope]):not(.style-scope)
+  .playlist-wrapper:not([style-scope]):not(.style-scope)
+  .playlist-title:not([style-scope]):not(.style-scope) {
+  color: <<FORE_SECONDARY>>;
+}
+
+/* Google cast, and possibly other areas */
+.paper-listbox-0 {
+  background: <<BACK_PRIMARY>>;
+  color: <<FORE_PRIMARY>>;
+}
 
 /* Update */
 .goog-menuheader .spinner {
-    background: url(ani_loading_white.gif) no-repeat 0/30px !important;
+  background: url(ani_loading_white.gif) no-repeat 0/30px !important;
 }
