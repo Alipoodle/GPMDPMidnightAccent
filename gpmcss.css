@@ -1,5 +1,7 @@
-/* A Font, This is optional
-   remove the things above the "@import" and below the "}" bracket to use font*/
+/*
+A Font, This is optional
+remove the things above the "@import" and below the "}" bracket to use font
+*/
 
 /*
 @import url(https://fonts.googleapis.com/css?family=Karla);
@@ -16,7 +18,7 @@ div {
 }
 /* This changes the colour of the current tab for the Library section
    Default this is your accent colour, this changes it to white to match the text above.*/
-.paper-tabs-1 #selectionBar.paper-tabs {
+#selectionBar.paper-tabs {
   border-color: white;
 }
 
@@ -72,6 +74,10 @@ div {
   cursor: default;  /* Changes mouse on hover on icon */
 }
 
+/* Removes new Switch to YT Music Button */
+#ytm-button {
+  display: none;
+}
 
 
 /* Textbox
@@ -88,8 +94,16 @@ paper-dialog textarea::selection {
   background: <<ALPHA 0.6>><<FORE_SECONDARY>><</ALPHA>>;
 }
 
+/* Fixes underline */
+.focused-line.paper-input-container { border-bottom: 2px solid <<FORE_SECONDARY>>; }
+
+/* Fixes Counter */
+.add-on-content.is-highlighted.paper-input-container > * {
+  color: <<FORE_SECONDARY>>;
+}
+
 /* Fixes icons on Search Bar */
-.paper-toolbar-1 {
+#material-one-middle iron-icon {
   color: <<FORE_PRIMARY>>;
 }
 
@@ -207,6 +221,9 @@ paper-dialog .buttons paper-button:not([style-scope]):not(.style-scope):not([dis
 gpm-quick-nav-2 .items.gpm-quick-nav > [selected] {
   color: <<FORE_SECONDARY>>;
 }
+#background.paper-ripple, .wave.paper-ripple {
+  background: <<FORE_SECONDARY>> !important;
+}
 
 /* Library Select */
 .goog-menu:not([style-scope]):not(.style-scope)
@@ -239,4 +256,15 @@ sj-home[selected="1"] .home-palette-id-3,
 /* Update */
 .goog-menuheader .spinner {
   background: url(ani_loading_white.gif) no-repeat 0/30px !important;
+}
+
+.gmusic-theme #primaryProgress.paper-progress {
+	height: 3px;
+}
+
+html.gpm-ifl-button, gpm-ifl-button, gpm-ifl-button > *.gpm-ifl-button {
+  --default-primary-color: <<FORE_SECONDARY>>;
+  --primary-color:         <<FORE_SECONDARY>>;
+  --dark-primary-color: <<LIGHTEN 0.2>><<FORE_SECONDARY>><</LIGHTEN>>;
+  --explicit-color:     <<LIGHTEN 0.2>><<FORE_SECONDARY>><</LIGHTEN>>;
 }
